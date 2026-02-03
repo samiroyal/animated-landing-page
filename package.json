@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development tsx server/index.ts",
-    "start": "cross-env NODE_ENV=production node dist/index.cjs",
-    "build": "node ./node_modules/tsx/dist/cli.js script/build.ts"
-  },
+ "scripts": {
+  "dev": "cross-env NODE_ENV=development tsx server/index.ts",
+  "start": "cross-env NODE_ENV=production node dist/index.cjs",
+  "build": "npx tsx script/build.ts"
+},
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@jridgewell/trace-mapping": "^0.3.25",
