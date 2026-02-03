@@ -24,6 +24,12 @@ export function useMarketingActions() {
     // Wire point for future analytics. Keep side-effect as console.debug.
     // eslint-disable-next-line no-console
     console.debug("[1PC] action:", action, payload ?? {});
+
+    if (action === "open_x") {
+      open("https://x.com/1pcchief");
+    } else if (action === "open_telegram") {
+      open("https://t.me/+2pV5_funiQg4ZWNh");
+    }
   };
 
   const scrollToId = (id: string) => {

@@ -106,13 +106,22 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2">
             <NeonButton
-              variant="gold"
+              variant="ghost"
               size="sm"
-              onClick={() => handleAction("launch_app")}
-              data-testid="nav-launch-app"
-              aria-label="Launch App"
+              onClick={() => handleAction("open_x")}
+              data-testid="nav-x"
+              aria-label="X"
             >
-              Launch App
+              X
+            </NeonButton>
+            <NeonButton
+              variant="ghost"
+              size="sm"
+              onClick={() => handleAction("open_telegram")}
+              data-testid="nav-telegram"
+              aria-label="Telegram"
+            >
+              TG
             </NeonButton>
 
             <button
@@ -148,10 +157,10 @@ export default function Navbar() {
               <NeonButton
                 variant="ghost"
                 size="md"
-                onClick={() => handleAction("open_whitepaper")}
-                data-testid="nav-mobile-whitepaper"
+                onClick={() => handleAction("open_x")}
+                data-testid="nav-mobile-x"
               >
-                Whitepaper
+                X
               </NeonButton>
               <NeonButton
                 variant="ghost"

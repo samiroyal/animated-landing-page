@@ -120,15 +120,6 @@ export default function Landing() {
                 <NeonButton
                   variant="primary"
                   size="lg"
-                  onClick={() => handleAction("launch_app")}
-                  data-testid="btn-launch-app"
-                >
-                  Launch App <ArrowRight className="h-5 w-5" />
-                </NeonButton>
-
-                <NeonButton
-                  variant="ghost"
-                  size="lg"
                   onClick={() => handleAction("open_whitepaper")}
                   data-testid="btn-whitepaper"
                 >
