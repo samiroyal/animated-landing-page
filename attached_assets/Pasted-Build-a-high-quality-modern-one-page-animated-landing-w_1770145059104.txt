@@ -1,0 +1,257 @@
+Build a high‑quality, modern, one‑page animated landing website for a Solana memecoin project called “1PC Society” (1PC).
+
+🎯 Purpose
+Marketing website for a memecoin launching soon on Solana.
+The site should feel:
+
+Premium
+
+Trustworthy
+
+Community‑driven
+
+Futuristic + crypto vibe
+
+Clean but visually powerful
+
+Optimized for virality & conversions
+
+🧠 Tech Stack
+Use:
+
+React + Vite
+
+Tailwind CSS
+
+Framer Motion for animations
+
+Optional: Three.js / canvas effects (lightweight only)
+
+Fully responsive (mobile-first)
+
+🎨 Design Style
+Dark futuristic background
+
+Green/gold cyber theme
+
+Solana aesthetic
+
+Animated glowing effects
+
+Floating particles
+
+Soft neon glows
+
+Glassmorphism cards
+
+Smooth scroll animations
+
+Section transitions
+
+Parallax effects
+
+Subtle motion everywhere
+
+🧱 Website Structure (One Page)
+1. Hero Section
+Big animated logo text: 1PC Society
+
+Tagline:
+"United. Active. Invested."
+
+Subtitle:
+The community‑powered memecoin on Solana
+
+Buttons:
+
+🚀 Launch App
+
+📄 Whitepaper
+
+🔗 X (Twitter)
+
+💬 Telegram
+
+Animated background particles
+
+Glow pulse animation
+
+Floating crypto orbits
+
+2. About Section
+Title: What is 1PC Society?
+
+Text:
+1PC Society is a community‑first Solana memecoin focused on growth, rewards, engagement, and long‑term value creation.
+Built by the people, for the people.
+
+Animated icons:
+
+Community
+
+Trust
+
+Growth
+
+Decentralization
+
+3. Tokenomics Section (Animated Bars)
+Total Supply: 1,000,000,000 1PC
+
+Animated progress bars:
+
+🟢 65% Liquidity Pool — 650,000,000
+
+🔵 17% Rewards / Team — 170,000,000
+
+🟠 7% Presale — 70,000,000
+
+🟣 6% Reserve / DAO — 60,000,000
+
+Each bar animates on scroll.
+
+4. Rewards System Section
+Title: Community Rewards System
+
+Cards:
+
+Recruiting
+
+Contests
+
+Social Engagement
+
+Community Contribution
+
+Above & Beyond Commitment
+
+Highlight text:
+
+For every 10 points earned → 1000 1PC tokens at launch
+
+5. Manager System Section
+Title: Manager Incentives
+
+Content:
+Each member who becomes a manager receives:
+
+💰 $10 SOL
+
+🛡️ 50 points
+
+Weekly payouts on Fridays
+
+Animated reward cards.
+
+6. Community Section
+Title: Join the Society
+
+Buttons:
+
+Join Telegram
+
+Follow on X
+
+Connect Wallet (UI only, no backend logic)
+
+7. Footer
+Text:
+For the People, By the People
+© 1PC Society
+Solana Network
+All Rights Reserved
+
+✨ Animations Required
+Scroll‑triggered animations
+
+Section fade‑in
+
+Floating icons
+
+Button hover glow
+
+Particle background
+
+Smooth scrolling
+
+Parallax backgrounds
+
+Micro‑interactions
+
+Animated gradients
+
+Glow borders
+
+🧩 Components to Build
+Navbar (floating glass style)
+
+Animated Hero
+
+Tokenomics component
+
+Rewards cards
+
+Manager reward cards
+
+Social buttons
+
+Footer
+
+Animated background component
+
+Particle system
+
+Smooth scroll system
+
+📱 Responsive Rules
+Mobile optimized
+
+Tablet optimized
+
+Desktop optimized
+
+Touch interactions
+
+Adaptive animations
+
+🔗 Social Links (hardcode placeholders)
+X: 
+Telegram: 
+
+⚙️ Output Requirements
+Full project structure
+
+Clean folder system
+
+Component‑based architecture
+
+Reusable components
+
+Modern UI
+
+Clean code
+
+No backend
+
+No authentication
+
+Frontend only
+
+Production‑ready layout
+
+🧠 AI Behavior
+Act as:
+
+Senior Web3 frontend developer
+
+Creative director
+
+UI/UX designer
+
+Crypto branding expert
+
+Motion designer
+
+Final Goal:
+Create a viral‑ready, premium, animated, one‑page Solana memecoin website that feels like a $10,000+ agency product.
+
