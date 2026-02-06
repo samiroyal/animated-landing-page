@@ -185,7 +185,7 @@
     pointer-events: none;
     z-index: 0;
     opacity: 0.09;
-    background-image: url("backie.jpg");
+    background-image: url("/backie.jpg");
     transform: translate3d(0, 0, 0);
     mix-blend-mode: overlay;
   }
