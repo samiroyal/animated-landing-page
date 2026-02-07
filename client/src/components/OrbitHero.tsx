@@ -66,7 +66,7 @@ export default function OrbitHero({ className, "data-testid": testId }: OrbitHer
       {/* Orbs */}
       <div className="absolute inset-0">
         <div
-          className="absolute left-[18%] top-[18%] h-16 w-16 rounded-3xl bg-gradient-to-br from-primary/35 via-white/5 to-transparent border border-white/10 blur-[0px] shadow-[0_0_0_1px_rgba(0,0,0,0.2),0_18px_60px_rgba(0,0,0,0.55)] floaty"
+          className="absolute left-[18%] top-[18%] h-16 w-16 rounded-3xl bg-gradient-to-br from-primary/35 via-white/5 to-transparent border border-white/10 shadow-[0_18px_60px_rgba(0,0,0,0.55)] floaty"
           style={{ transform: t1 }}
         />
         <div
@@ -78,28 +78,21 @@ export default function OrbitHero({ className, "data-testid": testId }: OrbitHer
           style={{ transform: t3 }}
         />
 
-        {/* Central "core" */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 rounded-[2.25rem] glass-strong neon-outline overflow-hidden scanlines">
-            <div className="absolute inset-0 bg-[radial-gradient(120px_120px_at_30%_20%,hsl(var(--primary)/0.38),transparent_60%),radial-gradient(140px_140px_at_70%_70%,hsl(var(--secondary)/0.26),transparent_65%)]" />
-            <div className="absolute inset-0 ring-1 ring-white/10" />
-            <div className="relative h-full w-full flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-xs tracking-[0.34em] uppercase text-muted-foreground">
-                  1PC
-                </div>
-                <div className="mt-1 text-2xl sm:text-3xl md:text-4xl font-bold text-shine">
-                  Society
-                </div>
-                <div className="mt-2 text-[11px] sm:text-xs text-muted-foreground">
-                  Solana • Community Powered
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* IMAGE CENTERPIECE (REPLACES BOX) */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <img
+            src="/middle.png"
+            alt="1PC Society Character"
+            className="
+              h-[260px] sm:h-[320px] md:h-[380px]
+              object-contain
+              drop-shadow-[0_30px_80px_rgba(0,0,0,0.75)]
+            "
+            style={{ transform: t1 }}
+          />
         </div>
 
-        {/* subtle glows */}
+        {/* Subtle glows */}
         <div className="absolute -inset-8 bg-[radial-gradient(520px_320px_at_40%_55%,hsl(var(--primary)/0.10),transparent_60%),radial-gradient(460px_320px_at_70%_35%,hsl(var(--secondary)/0.08),transparent_60%)] blur-2xl opacity-80" />
       </div>
     </div>
