@@ -5,128 +5,40 @@
 @tailwind utilities;
 
 /* ==========================================================================
-   1PC Society — Dark Futuristic (green/gold cyber) w/ glass + neon glow
+   1PC Society — Dark Futuristic Optimized Edition
    ========================================================================== */
 
 :root {
-  --font-sans: "Spline Sans", ui-sans-serif, system-ui, -apple-system,
-    "Segoe UI", sans-serif;
-  --font-display: "Unbounded", ui-sans-serif, system-ui, -apple-system,
-    "Segoe UI", sans-serif;
+  --font-sans: "Spline Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Unbounded", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* Palette — space-separated HSL */
   --background: 225 32% 6%;
   --foreground: 210 25% 96%;
 
   --card: 228 28% 9%;
   --card-foreground: 210 25% 96%;
-  --card-border: 220 35% 20%;
-
-  --popover: 228 28% 9%;
-  --popover-foreground: 210 25% 96%;
-  --popover-border: 220 35% 20%;
-
   --border: 220 28% 18%;
   --input: 220 28% 22%;
   --ring: 154 92% 54%;
 
-  --primary: 154 92% 54%; /* neon green */
-  --primary-foreground: 230 35% 7%;
-
-  --secondary: 45 92% 58%; /* molten gold */
-  --secondary-foreground: 230 35% 7%;
+  --primary: 154 92% 54%;
+  --secondary: 45 92% 58%;
+  --accent: 182 88% 52%;
 
   --muted: 228 22% 14%;
   --muted-foreground: 220 10% 70%;
 
-  --accent: 182 88% 52%; /* cyan edge */
-  --accent-foreground: 230 35% 7%;
-
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 210 25% 96%;
-
-  --chart-1: 154 92% 54%;
-  --chart-2: 45 92% 58%;
-  --chart-3: 182 88% 52%;
-  --chart-4: 284 82% 64%;
-  --chart-5: 12 90% 60%;
-
-  --sidebar: 228 28% 9%;
-  --sidebar-foreground: 210 25% 96%;
-  --sidebar-border: 220 35% 20%;
-  --sidebar-primary: 154 92% 54%;
-  --sidebar-primary-foreground: 230 35% 7%;
-  --sidebar-accent: 228 22% 14%;
-  --sidebar-accent-foreground: 210 25% 96%;
-  --sidebar-ring: 154 92% 54%;
-
   --radius: 1rem;
 
-  /* micro texture + depth */
-  --shadow-ambient: 0 12px 40px hsl(230 60% 2% / 0.65);
-  --shadow-elev: 0 16px 60px hsl(230 60% 2% / 0.55);
-  --shadow-glow-green: 0 0 0 1px hsl(154 92% 54% / 0.25),
-    0 0 44px hsl(154 92% 54% / 0.16);
-  --shadow-glow-gold: 0 0 0 1px hsl(45 92% 58% / 0.22),
-    0 0 44px hsl(45 92% 58% / 0.14);
-
-  /* Existing elevate vars used by shadcn utilities (keep compatible) */
-  --button-outline: rgba(255, 255, 255, 0.12);
-  --badge-outline: rgba(255, 255, 255, 0.08);
-  --opaque-button-border-intensity: 10;
-  --elevate-1: rgba(255, 255, 255, 0.05);
-  --elevate-2: rgba(255, 255, 255, 0.1);
+  /* Performance shadows */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.45);
+  --shadow-glow-green: 0 0 30px hsl(154 92% 54% / 0.25);
+  --shadow-glow-gold: 0 0 30px hsl(45 92% 58% / 0.22);
 }
 
 .dark {
-  /* keep same as :root for this design */
   --background: 225 32% 6%;
   --foreground: 210 25% 96%;
-  --card: 228 28% 9%;
-  --card-foreground: 210 25% 96%;
-  --border: 220 28% 18%;
-  --input: 220 28% 22%;
-  --ring: 154 92% 54%;
-}
-
-/* Automatic computed borders from existing template expectations */
-:root {
-  --sidebar-primary-border: hsl(var(--sidebar-primary));
-  --sidebar-primary-border: hsl(from hsl(var(--sidebar-primary)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --sidebar-accent-border: hsl(var(--sidebar-accent));
-  --sidebar-accent-border: hsl(from hsl(var(--sidebar-accent)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --primary-border: hsl(var(--primary));
-  --primary-border: hsl(from hsl(var(--primary)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --secondary-border: hsl(var(--secondary));
-  --secondary-border: hsl(from hsl(var(--secondary)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --muted-border: hsl(var(--muted));
-  --muted-border: hsl(from hsl(var(--muted)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --accent-border: hsl(var(--accent));
-  --accent-border: hsl(from hsl(var(--accent)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --destructive-border: hsl(var(--destructive));
-  --destructive-border: hsl(from hsl(var(--destructive)) h s
-        calc(l + var(--opaque-button-border-intensity)) / alpha);
-
-  --shadow-2xs: var(--shadow-ambient);
-  --shadow-xs: var(--shadow-ambient);
-  --shadow-sm: var(--shadow-ambient);
-  --shadow: var(--shadow-ambient);
-  --shadow-md: var(--shadow-elev);
-  --shadow-lg: var(--shadow-elev);
-  --shadow-xl: var(--shadow-elev);
-  --shadow-2xl: var(--shadow-elev);
 }
 
 @layer base {
@@ -139,73 +51,50 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
     font-family: var(--font-sans);
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
     overflow-x: hidden;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-display);
     @apply font-bold tracking-tight;
   }
 }
 
-/* --------------------------------------------
-   Ambient background: gradient mesh + grain
----------------------------------------------*/
+/* =========================================================
+   FAST BACKGROUND SYSTEM
+   ========================================================= */
+
 @layer utilities {
+
+  /* MAIN BACKGROUND */
   .bg-mesh {
-  background-image:
-    /* dark overlay for readability */
-    linear-gradient(
-      to bottom,
-      rgba(10, 15, 12, 0.75),
-      rgba(10, 15, 12, 0.9)
-    ),
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(5, 15, 10, 0.80),
+        rgba(5, 15, 10, 0.95)
+      ),
+      url("/backie.jpg");
 
-    /* glow effects */
-    radial-gradient(
-      1200px 800px at 20% 25%,
-      hsl(var(--primary) / 0.35),
-      transparent 55%
-    ),
-    radial-gradient(
-      1000px 800px at 80% 30%,
-      hsl(var(--secondary) / 0.25),
-      transparent 60%
-    ),
-    radial-gradient(
-      1200px 900px at 50% 90%,
-      hsl(var(--accent) / 0.25),
-      transparent 60%
-    ),
-
-    /* MAIN IMAGE */
-    url("/backie.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-  .glass-strong {
-    background: linear-gradient(
-      180deg,
-      hsl(var(--card) / 0.78),
-      hsl(var(--card) / 0.5)
-    );
-    border: 1px solid hsl(var(--border) / 0.7);
-    box-shadow: var(--shadow-elev);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* FIXED REMOVED = PERFORMANCE BOOST */
   }
 
+  /* GLASS */
+  .glass-strong {
+    background: rgba(20, 30, 25, 0.65);
+    border: 1px solid rgba(120, 255, 200, 0.08);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* NEON */
   .neon-outline {
     box-shadow: var(--shadow-glow-green);
   }
@@ -214,72 +103,53 @@
     box-shadow: var(--shadow-glow-gold);
   }
 
+  /* TEXT SHINE */
   .text-shine {
     background: linear-gradient(
       90deg,
-      hsl(var(--foreground) / 0.95),
-      hsl(var(--secondary) / 0.95),
-      hsl(var(--primary) / 0.95),
-      hsl(var(--foreground) / 0.95)
+      hsl(var(--foreground)),
+      hsl(var(--secondary)),
+      hsl(var(--primary)),
+      hsl(var(--foreground))
     );
-    background-size: 220% 100%;
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: textShine 8s linear infinite;
+    animation: textShine 6s linear infinite;
   }
 
+  /* BUTTON GLOW */
   .btn-glow {
     position: relative;
-    isolation: isolate;
   }
 
   .btn-glow::before {
     content: "";
     position: absolute;
-    inset: -1px;
+    inset: -2px;
     border-radius: inherit;
-    background: radial-gradient(
-        120px 80px at 20% 50%,
-        hsl(var(--primary) / 0.5),
-        transparent 65%
-      ),
-      radial-gradient(
-        120px 80px at 80% 50%,
-        hsl(var(--secondary) / 0.42),
-        transparent 65%
-      );
+    background: radial-gradient(circle, hsl(var(--primary)/0.35), transparent 70%);
     opacity: 0;
-    transition: opacity 250ms ease;
+    transition: opacity 0.3s ease;
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(12px);
   }
 
-  .btn-glow:hover::before,
-  .btn-glow:focus-visible::before {
+  .btn-glow:hover::before {
     opacity: 1;
   }
 
-  .focus-ring {
-    @apply focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/20;
-  }
-
-  .section-anchor {
-    scroll-margin-top: 96px;
-  }
-
+  /* FLOAT */
   .floaty {
-    animation: floaty 6.5s ease-in-out infinite;
+    animation: floaty 6s ease-in-out infinite;
   }
 
   .floaty-slow {
-    animation: floaty 10.5s ease-in-out infinite;
+    animation: floaty 10s ease-in-out infinite;
   }
 
-  .scanlines {
-    position: relative;
-  }
-
+  /* SCANLINES (LIGHTWEIGHT) */
   .scanlines::after {
     content: "";
     position: absolute;
@@ -287,50 +157,34 @@
     pointer-events: none;
     background: repeating-linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.06) 0px,
-      rgba(255, 255, 255, 0.06) 1px,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 1px,
       transparent 2px,
       transparent 6px
     );
-    opacity: 0.05;
-    mix-blend-mode: overlay;
+    opacity: 0.04;
   }
 
   .hairline {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      hsl(var(--border) / 0.9),
-      transparent
-    );
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
     height: 1px;
   }
 }
 
+/* ========================================================= */
+
 @keyframes textShine {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 220% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
 
 @keyframes floaty {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(0, -10px, 0);
-  }
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 /* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
   .floaty,
   .floaty-slow,
   .text-shine {
