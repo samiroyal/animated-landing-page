@@ -117,14 +117,16 @@ export default function Landing() {
               </motion.p>
 
               <div className="mt-7 flex flex-col sm:flex-row gap-3 sm:items-center" data-testid="hero-ctas">
-                <NeonButton
-                  variant="primary"
-                  size="lg"
-                  onClick={() => handleAction("open_whitepaper")}
-                  data-testid="btn-whitepaper"
-                >
+               <a
+                 href="/pdf.pdf"
+                 download
+                data-testid="btn-whitepaper"
+>
+                  <NeonButton variant="primary" size="lg">
                   Whitepaper <Link2 className="h-5 w-5" />
-                </NeonButton>
+                   </NeonButton>
+              </a>
+
 
                 <div className="flex items-center gap-2">
                   <NeonButton
@@ -598,14 +600,6 @@ export default function Landing() {
                 >
                   Follow on X <Star className="h-5 w-5" />
                 </NeonButton>
-                <NeonButton
-                  variant="gold"
-                  size="lg"
-                  onClick={() => handleAction("connect_wallet")}
-                  data-testid="btn-connect-wallet"
-                >
-                  Connect Wallet <Wallet className="h-5 w-5" />
-                </NeonButton>
               </div>
             </div>
 
@@ -670,14 +664,16 @@ export default function Landing() {
               </div>
 
               <div className="flex flex-wrap items-center gap-2" data-testid="footer-links">
-                <NeonButton
-                  variant="ghost"
-                  size="md"
-                  onClick={() => handleAction("open_whitepaper")}
-                  data-testid="footer-whitepaper"
-                >
-                  Whitepaper
-                </NeonButton>
+                <a
+  href="/pdf.pdf"
+  download
+  data-testid="footer-whitepaper"
+>
+  <NeonButton variant="ghost" size="md">
+    Whitepaper
+  </NeonButton>
+</a>
+
                 <NeonButton
                   variant="ghost"
                   size="md"
